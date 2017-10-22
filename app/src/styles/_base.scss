@@ -1,0 +1,50 @@
+/*
+Application Settings Go Here
+------------------------------------
+This file acts as a bundler for all variables/mixins/themes, so they
+can easily be swapped out without `core.scss` ever having to know.
+
+For example:
+
+@import './variables/colors';
+@import './variables/components';
+@import './themes/default';
+*/
+
+@import './variables/colors';
+@import './variables/breakpoints';
+@import './global/button';
+@import './global/section';
+@import './parallax';
+
+// HEADERS
+h1, .h1{
+  font-size: 2.2rem !important;
+  font-weight: 300 !important;
+  letter-spacing: 0.08em;
+}
+h2{
+  letter-spacing: 0.08em;
+}
+img{
+  width: 100%;
+}
+// TEXT
+p{
+  font-size: 1rem;
+}
+
+body{
+  margin: 0;
+}
+.font{
+  &--small{
+    font-size: .8rem;
+  }
+}
+
+@media(max-width: $mobile){
+  .container{
+    padding: 0 !important;
+  }
+}

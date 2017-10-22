@@ -1,0 +1,15 @@
+nav {
+  display: flex;
+  position: absolute;
+  top: 50px;
+  right: 25px;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 1; }
+  nav a {
+    width: 50px;
+    color: #fff; }
+    nav a svg {
+      font-size: 20px; }
+    nav a.nav__logo {
+      width: 100px; }

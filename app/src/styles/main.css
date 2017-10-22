@@ -1,0 +1,106 @@
+/*
+Application Settings Go Here
+------------------------------------
+This file acts as a bundler for all variables/mixins/themes, so they
+can easily be swapped out without `core.scss` ever having to know.
+
+For example:
+
+@import './variables/colors';
+@import './variables/components';
+@import './themes/default';
+*/
+@import url("https://fonts.googleapis.com/css?family=Anton|Oswald|Roboto");
+button {
+  margin: 15px; }
+  button.primary {
+    background-color: #61C9E5; }
+
+section, .section {
+  width: 100%;
+  height: 100vh; }
+
+.react-parallax-content {
+  position: inherit;
+  position: unset; }
+
+h1, .h1 {
+  font-size: 2.2rem !important;
+  font-weight: 300 !important;
+  letter-spacing: 0.08em; }
+
+h2 {
+  letter-spacing: 0.08em; }
+
+img {
+  width: 100%; }
+
+p {
+  font-size: 1rem; }
+
+body {
+  margin: 0; }
+
+.font--small {
+  font-size: .8rem; }
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 !important; } }
+
+.scroll-cue {
+  font-size: 18px;
+  text-align: center;
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  color: #ccc;
+  text-transform: uppercase;
+  letter-spacing: 0.2em; }
+  .scroll-cue svg {
+    font-size: 25px; }
+
+.hero__header {
+  color: #fff;
+  text-transform: uppercase;
+  text-align: left;
+  position: absolute;
+  top: 35%;
+  right: 80px;
+  transfrom: translateY(-40%); }
+
+.about {
+  margin: 25vh 0;
+  font-size: 2em; }
+  .about__content {
+    background-color: rgba(255, 255, 255, 0.85) !important;
+    max-width: 768px;
+    padding: 30px;
+    margin: auto; }
+
+nav {
+  display: flex;
+  position: absolute;
+  top: 50px;
+  right: 25px;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 1; }
+  nav a {
+    width: 50px;
+    color: #fff; }
+    nav a svg {
+      font-size: 20px; }
+    nav a.nav__logo {
+      width: 100px; }
+
+html {
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  font-family: 'oswald', 'roboto'; }

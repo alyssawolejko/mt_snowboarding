@@ -1,0 +1,19 @@
+nav{
+  display: flex;
+  position: absolute;
+  top: 50px;
+  right: 25px;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 1;
+  a{
+    width: 50px;
+    color: #fff;
+    svg{
+      font-size: 20px;
+    }
+    &.nav__logo{
+      width: 100px;
+    }
+  }
+}
